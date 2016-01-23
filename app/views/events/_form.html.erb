@@ -1,0 +1,13 @@
+<%= form_for(@event) do |f| %>
+  <div class="form-group">
+    <%= f.label :nom_del_esdeveniment %>
+    <%= f.text_field :name, autofocus: true, placeholder: 'Nom del esdeveniment', class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :Quan? %>
+    <%= f.text_field :when, placeholder: 'Quan és el esdeveniment?', class: 'form-control' %>
+  </div>
+  <div class="actions">
+    <%= f.submit :crea, class: 'btn btn-primary' %>
+  </div>
+<% end %>

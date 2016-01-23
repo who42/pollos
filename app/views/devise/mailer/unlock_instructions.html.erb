@@ -1,0 +1,7 @@
+<p>Hola <%= @resource.email %>!</p>
+
+<p>He bloquejat la teva compte perquè has fallat massa vegades al intentar entrar. Això deu ser perquè, o vas borratxo o algú està intentant accedir.</p>
+
+<p>Clicka el boto per desbloquejar la teva compta.</p>
+
+<p><%= link_to 'Desbloqueja', unlock_url(@resource, unlock_token: @token) %></p>

@@ -1,0 +1,5 @@
+<p>Benvingut Pollo <%= @email %>!</p>
+
+<p>Pots confirmar el teu email de compte amb el següent link:</p>
+
+<p><%= link_to 'Confirma', confirmation_url(@resource, confirmation_token: @token) %></p>
